@@ -27,9 +27,9 @@ Resources:
         - ExecuteLambdaRole
         - Arn
       Code:
-        S3Bucket: gopizza-lambda-functions
+        S3Bucket: pizza-lambda-function
         S3Key: LambdaFunctions.zip
-      Runtime: nodejs6.10
+      Runtime: nodejs18.x
       Timeout: '10'
   ProcessPayment:
     Type: AWS::Lambda::Function
@@ -42,9 +42,9 @@ Resources:
         - ExecuteLambdaRole
         - Arn
       Code:
-        S3Bucket: gopizza-lambda-functions
+        S3Bucket: pizza-lambda-function
         S3Key: LambdaFunctions.zip
-      Runtime: nodejs6.10
+      Runtime: nodejs18.x
       Timeout: '10'
   ConfirmOrder:
     Type: AWS::Lambda::Function
@@ -57,9 +57,9 @@ Resources:
         - ExecuteLambdaRole
         - Arn
       Code:
-        S3Bucket: gopizza-lambda-functions
+        S3Bucket: pizza-lambda-function
         S3Key: LambdaFunctions.zip
-      Runtime: nodejs6.10
+      Runtime: nodejs18.x
       Timeout: '10'
   CancelOrder:
     Type: AWS::Lambda::Function
@@ -72,9 +72,9 @@ Resources:
         - ExecuteLambdaRole
         - Arn
       Code:
-        S3Bucket: gopizza-lambda-functions
+        S3Bucket: pizza-lambda-function
         S3Key: LambdaFunctions.zip
-      Runtime: nodejs6.10
+      Runtime: nodejs18.x
       Timeout: '10'
   NotifyUser:
     Type: AWS::Lambda::Function
@@ -87,9 +87,9 @@ Resources:
         - ExecuteLambdaRole
         - Arn
       Code:
-        S3Bucket: gopizza-lambda-functions
+        S3Bucket: pizza-lambda-function
         S3Key: LambdaFunctions.zip
-      Runtime: nodejs6.10
+      Runtime: nodejs18.x
       Timeout: '10'
   NotifyWithPolly:
     Type: AWS::Lambda::Function
@@ -102,7 +102,7 @@ Resources:
         - ExecuteLambdaRole
         - Arn
       Code:
-        S3Bucket: gopizza-lambda-functions
+        S3Bucket: pizza-lambda-function
         S3Key: LambdaFunctions.zip
-      Runtime: nodejs6.10
+      Runtime: nodejs18.x
       Timeout: '10'

@@ -5,7 +5,7 @@ var AWS = require('aws-sdk');
 var fs = require('fs');
 
 // Create an Polly client
-var Polly = new AWS.Polly({ signatureVersion: 'v4', region: 'us-east-2' });
+var Polly = new AWS.Polly({ signatureVersion: 'v4', region: 'us-east-1' });
 
 
 
